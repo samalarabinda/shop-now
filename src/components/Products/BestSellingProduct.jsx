@@ -3,14 +3,14 @@ import productData from './productsdata'
 import { FaStar } from "react-icons/fa";
 
 
-const BestSellingProduct = () => {
+const BestSellingProduct = (props) => {
     return (
         <div className='mt-14 mb-12'>
             <div className='container mx-auto'>
                 {/* Header Section */}
                 <div className='text-center mb-10 max-w-[600px] mx-auto'>
                     <p className='text-base text-primary'>Top Selling Products</p>
-                    <h1 className='text-3xl font-bold'>Products</h1>
+                    <h1 className='text-3xl font-bold'>{props.producttitle}</h1>
                     <p className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Et necessitatibus laudantium excepturi! Tempore,
                         quibusdam ad?
